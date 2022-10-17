@@ -1,0 +1,23 @@
+.width_50 {
+    width: 50%;
+}
+.heigth_100 {
+    height: 100%;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.align_center {
+    align-items: center;
+}

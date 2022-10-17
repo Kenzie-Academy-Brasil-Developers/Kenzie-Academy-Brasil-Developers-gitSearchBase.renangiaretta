@@ -1,0 +1,151 @@
+
+*{
+    list-style: none;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container_main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-grey-2);
+    width: 80vw;
+    height: 100vh;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+.container_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: var(--color-grey-7);
+
+
+}
+.mwidth_50 {
+    max-width: 50%;
+}
+.container_header_profile{
+    display: flex;
+    width: 100%;
+}
+
+.profile_img{
+    width: 42px;
+    height: 42px;
+}
+
+#containerHeaderButtons{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.container_cards{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 100vh;
+}
+
+#containerCardItems{
+    width: 250px;
+    height: 200px;
+    border: 2px solid var(--color-grey-4);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--color-grey-7);
+}
+
+#containerCardItems:hover {
+    background-color: var(--color-grey-1);
+}
+
+#ulCards {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#mailBtn {
+    background-color: var(--color-brand-2);
+    width: 84px;
+    height: 38px;
+    color: var(--color-grey-7);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#changeUserBtn {
+    background-color: #33363A;
+    width: 169px;
+    height: 38px;
+    border-radius: 8px;
+    color: var(--color-grey-7);
+    border: none;
+    cursor: pointer;
+}
+
+#btnRepo {
+    background-color: var(--color-brand-2);
+    width: 93px;
+    height: 28px;
+    color: var(--color-grey-7);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnDemo {
+    background-color: var(--color-grey-2);
+    border: 1px solid var(--color-grey-7);
+    width: 50px;
+    border-radius: 4px;
+    color: var(--color-grey-7);
+    cursor: pointer;
+}
+
+.container_card_texts {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_card_texts >h1{
+    color: var(--color-grey-7);
+
+}
+
+.container_card_texts>p{
+    color: var(--color-grey-6);
+}
+
+.container_card_buttons{
+    max-width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+
+}
