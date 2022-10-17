@@ -129,7 +129,7 @@ function cardRepo(repo) {
 
     function buttonsInteractions () {
         btnRepo.addEventListener('click', event => {
-            window.location.href = repo.html_url
+            window.open(repo.html_url)
         })
 
         btnDemo.addEventListener('click', event =>{
@@ -137,11 +137,11 @@ function cardRepo(repo) {
                 document.getElementById('containerCardItems')
                 const depoLess = document.createElement('span')
                 depoLess.innerText = 'Este repositório nao possui demo.'
-
+                depoLess.classList.add('red')
                 containerCardItems.append(depoLess)
 
             }else {
-                window.location.href = repo.homepage
+                window.open(repo.homepage)
             }
             
 

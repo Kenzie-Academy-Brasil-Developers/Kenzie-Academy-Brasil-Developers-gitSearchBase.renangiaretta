@@ -142,6 +142,9 @@
     color: var(--color-grey-6);
 }
 
+.red {
+    color: red;
+}
 .container_card_buttons{
     max-width: 80%;
     display: flex;
