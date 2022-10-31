@@ -4,7 +4,9 @@
 .heigth_100 {
     height: 100%;
 }
-
+.flex {
+    display: flex;
+}
 
 .flex {
     display: flex;

@@ -1,6 +1,26 @@
 (localStorage.getItem('profUrl'))
-
 let profUrl = (localStorage.getItem('profUrl'))
+
+
+let arrCatch = []
+async function teste() {
+    
+    fetch(profUrl).then((response) => {
+        return response.json()})
+        .then((response) => {
+            if(localStorage.arrSugestions){
+                arrCatch = JSON.parse(localStorage.getItem('arrSugestions'))
+             }
+             let newUser = response
+             arrCatch.unshift(newUser)
+             localStorage.arrSugestions = JSON.stringify(arrCatch)
+         })
+}
+teste()
+let arrToShow = ((localStorage.arrSugestions))
+// const testing = (arrToShow.slice(0)).reverse()
+console.log(arrToShow)
+
 
 function headerButtons () {
     const containerHeaderButtons = document.getElementById('containerHeaderButtons')
@@ -61,11 +81,11 @@ function cardProfile(profile){
     cardProfileName.innerText = profile.name
     cardProfileStack.innerText = profile.bio
 
-
+    cardProfileStack.classList = 'profile_stack'
     containerProfileItems.classList = 'container_header_profile'
-    containerProfileTexts.classList = 'flex_column mwidth_50'
+    containerProfileTexts.classList = 'profile_stack text10'
     cardProfileImg.classList = 'profile_img'
-    cardProfileName.classList = 'profile_name'
+    cardProfileName.classList = 'profile_name text9'
 
     cardProfileSpan.append(cardProfileImg)
     containerProfileTexts.append(cardProfileName, cardProfileStack)
@@ -118,7 +138,7 @@ function cardRepo(repo) {
     btnDemo.id = 'btnDemo'
 
     containerCardItems.classList = 'container_card_items'
-    containerCardTexts.classList = 'container_card_texts'
+    containerCardTexts.classList = 'container_card_texts text7'
     containerCardButtons.classList = 'container_card_buttons'
 
     containerCardTexts.append(textCardTitle, textCardDescription)
@@ -166,21 +186,3 @@ function headerButtonsInteractions(){
         })
         })        
 }
-
-
-
-async function createArrSugested(){
-    
-    await fetch(profUrl).then(async (response) => {
-            const response1 = await (response.json())
-        // console.log(response1.avatar_url)
-        let arrSugested = []
-        arrSugested.push(response1.url)
-        arrSugested.push(response1.avatar_url)
-        // console.log(arrSugested)
-        localStorage.setItem('arrSugested', arrSugested)
-    })
-}
-createArrSugested()
-
-

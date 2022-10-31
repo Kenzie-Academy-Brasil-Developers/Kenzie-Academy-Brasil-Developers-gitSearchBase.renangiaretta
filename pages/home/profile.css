@@ -7,29 +7,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-grey-2);
+    width: 100vw;
+    /* height: 100vh; */
     
 }
 
 .container_main{
     display: flex;
     flex-direction: column;
-    background-color: var(--color-grey-2);
-    width: 80vw;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--color-grey-2); */
+    width: 80%;
+
     
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    width: 80vw;
+    align-items: center;
+    width: 80%;
+    /* background-color: yellowgreen; */
 }
 .container_header{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0rem;
     color: var(--color-grey-7);
 
 
@@ -43,8 +50,9 @@
 }
 
 .profile_img{
-    width: 42px;
-    height: 42px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--color-brand-2);
 }
 
 #containerHeaderButtons{
@@ -58,24 +66,26 @@
 .container_cards{
     display: flex;
     justify-content: center;
-    width: 80vw;
-    height: 100vh;
+
+    /* width: 80vw; */
+    /* height: 100vh; */
 }
 
 #containerCardItems{
-    width: 250px;
-    height: 200px;
+    width: 23.813rem;
+    height: 15.188rem;
     border: 2px solid var(--color-grey-4);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
     color: var(--color-grey-7);
 }
 
 #containerCardItems:hover {
     background-color: var(--color-grey-1);
+    border: 2px solid var(--color-grey-7);
 }
 
 #ulCards {
@@ -83,7 +93,9 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1rem;
 }
 
 #mailBtn {
@@ -94,6 +106,9 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0px;
 }
 
 #changeUserBtn {
@@ -104,6 +119,9 @@
     color: var(--color-grey-7);
     border: none;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0px;
 }
 
 #btnRepo {
@@ -114,6 +132,9 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0px;
 }
 
 #btnDemo {
@@ -123,6 +144,9 @@
     border-radius: 4px;
     color: var(--color-grey-7);
     cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0px;
 }
 
 .container_card_texts {
@@ -131,6 +155,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 2.6rem;
+    gap: 1rem;
 }
 
 .container_card_texts >h1{
@@ -140,6 +166,9 @@
 
 .container_card_texts>p{
     color: var(--color-grey-6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
 }
 
 .red {
@@ -150,5 +179,17 @@
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
+    margin-left: 2.6rem;
 
+}
+.profile_name {
+    margin-left: 0.5rem;
+}
+.profile_stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 0.5rem;
+    margin-left: 0.5rem;
 }

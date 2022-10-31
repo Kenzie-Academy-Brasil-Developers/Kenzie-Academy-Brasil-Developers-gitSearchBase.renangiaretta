@@ -9,7 +9,10 @@ function showButton(){
                 formBtn.classList.remove('deactivated')
                 formBtn.classList.add('activated')
             }else{
+                formBtn.classList.remove('activated')
+                formBtn.classList.add('deactivated')
                 const formBtn = document.getElementById('formBtn').disabled = true
+                
             }
         })
     }
